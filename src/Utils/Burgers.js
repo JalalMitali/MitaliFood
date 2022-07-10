@@ -22,6 +22,30 @@ const Categories = [
         name: "Large Burger",
         price: 5.90,
         time: 25
+    },
+    BurgerFive = {
+        imagePath: require("../Images/Burgers/Burger1.jpg"),
+        name: "Casual Burger",
+        price: 5.25,
+        time: 25
+    },
+    BurgerSix = {
+        imagePath: require("../Images/Burgers/Burger2.jpg"),
+        name: "Small Burger",
+        price: 5.30,
+        time: 25
+    },
+    BurgerSeven = {
+        imagePath: require("../Images/Burgers/Burger3.jpg"),
+        name: "Beef Burger",
+        price: 5.70,
+        time: 25
+    },
+    BurgerEight = {
+        imagePath: require("../Images/Burgers/Burger4.jpg"),
+        name: "Large Burger",
+        price: 5.90,
+        time: 25
     }
 ]
 export default Categories;

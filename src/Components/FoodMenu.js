@@ -1,7 +1,8 @@
 import React from 'react';
 import {
    StyleSheet,
-   FlatList
+   FlatList,
+   ScrollView
  } from 'react-native';
 import Burgers from '../Utils/Burgers';
 import FoodItem from './FoodItem';
@@ -11,24 +12,34 @@ import FoodItem from './FoodItem';
     <FoodItem imagePath={item.imagePath} name={item.name} price={item.price} time={item.time} />
   );
     return (
-      <FlatList
-      numColumns={2}
-      data={Burgers}
-      horizontal={false}
-      renderItem={renderItem}
-      keyExtractor={item => item.id}
-      contentContainerStyle={styles.list}
-      style={styles.listItems}
-    />
+      <ScrollView horizontal  showsHorizontalScrollIndicator={false} style={styles.scroll}>
+        <FlatList
+        numColumns={2}
+        data={Burgers}
+        horizontal={false}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+        contentContainerStyle={styles.list}
+        style={styles.listItems}
+        scrollEnabled
+        showsVerticalScrollIndicator={false}
+      />
+    </ScrollView>
     );
  }
  const styles = StyleSheet.create({
+  scroll: {
+    height: 250,
+    flexWrap: 'nowrap',
+  },
    list: {
+     flexGrow: 0,
      margin: 10,
      alignSelf: 'center',
      justifyContent: 'center',
      alignItems: 'center',
      textAlign: 'center',
+     
    },
    listItems: {
      marginLeft: 20,

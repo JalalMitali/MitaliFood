@@ -4,6 +4,9 @@
 * npm install
 * npm run ios (iOS Device / Simulator )
 * npm run android (Android Device / Simulator)
+![alt text](https://user-images.githubusercontent.com/88791252/178148937-ca595c68-9906-41f9-90c7-c8072f992d6d.png "Mitali Food - Elegant Food Delivery App")
+
+## Image Previews :
 ![alt text](https://user-images.githubusercontent.com/88791252/178114358-b68fc0bc-e950-4fe1-a2a0-fee89d5a3518.png "React Native Food Delivery App")
 
 ## More From Jalal Mitali :
